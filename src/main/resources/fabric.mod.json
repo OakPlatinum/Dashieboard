@@ -3,39 +3,29 @@
 	"id": "dashieboard",
 	"version": "${version}",
 	"name": "Dashieboard",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A lightweight Fabric mod for Minecraft servers, offering a unified HTTP API to enable real-time game data access for dashboards and external monitoring tools.",
 	"authors": [
-		"Me!"
+		"Oak Platinum"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://mln.hz6826.com.cn/",
+		"sources": "https://github.com/OakPlatinum/Dashieboard"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/dashieboard/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
 			"com.hz6826.dashieboard.Dashieboard"
-		],
-		"client": [
-			"com.hz6826.dashieboard.DashieboardClient"
 		]
 	},
 	"mixins": [
-		"dashieboard.mixins.json",
-		{
-			"config": "dashieboard.client.mixins.json",
-			"environment": "client"
-		}
+		"dashieboard.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.16.10",
+		"fabricloader": "*",
 		"minecraft": "~1.21.1",
 		"java": ">=21",
 		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
 	}
 }
